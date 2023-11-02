@@ -42,7 +42,7 @@ class User(Person):
             self.new_account[email] = [] 
             self.new_account[email].append(ac)
             # print(self.new_account) 
-            # print(f'Hi {name} your account has been successfully created.')
+            print(f'Hi {name} your account has been successfully created.')
             # print('Here is your account details')
             # print('==============================')
             # print(self.new_account[email])
@@ -86,7 +86,7 @@ class User(Person):
                             self.transaction_details[i] = []
                         self.transaction_details[i].append(add)
                         find = False
-                pass 
+       
                 
         if find:
             print('The bank is bankrupt.')
@@ -163,15 +163,7 @@ class User(Person):
     def view_account_details(self, email, password):
         self.login(email, password)
         print(f'Hi {self.username}! Your name is {self.username}, your phone number is {self.phone_number} your account balance is {self.user_wallet} ')
-        # Display the user's account details
-        # self.create_account()
-        # key = self.new_account.keys()
-        # for i in key:
-        #     print(i)
-        #     for index in range(1 , len(self.new_account[i])):
-        #         print(self.new_account[i][index])
-        #         pass 
-        # pass
+       
         
 
     def change_password(self, email, current_password, new_password):
